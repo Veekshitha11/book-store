@@ -12,13 +12,14 @@
     }
   ],
   "rewrites": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/Backend/index.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/Frontend/dist/$1"
-    }
-  ]
+  {
+    "source": "/api/(.*)",
+    "destination": "Backend/index.js"
+  },
+  {
+    "source": "/(.*)",
+    "destination": "/Frontend/dist/$1"
+  }
+]
+
 }
